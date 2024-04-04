@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(110, 109, 109, 0.62);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #494949;
+}
+
+/* .logoWithShadow {
+    position: relative;
+} */
+
+/* .logoWithShadow::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    -webkit-box-shadow: 0px 6px 36px 2px rgba(0,215,239,0.47);
+    -moz-box-shadow: 0px 6px 36px 2px rgba(0,215,239,0.47);
+    box-shadow: 0px 6px 36px 2px rgba(0,215,239,0.47);
+    z-index: -1;
+} */
+
+.Shadow {
+    -webkit-box-shadow: 0px 37px 95px -24px rgba(0, 215, 239, 0.45);
+    -moz-box-shadow: 0px 37px 95px -24px rgba(0, 215, 239, 0.45);
+    box-shadow: 0px 37px 95px -24px rgba(0, 215, 239, 0.45);
+}
+
+.grey {
+    color: #6a6f77;
+}
+
+.darkBlue {
+    color: #123769;
+}
+
+/* 
+.heroContainer {
+    height: 100vh;
+} */
+
+.gradient>* {
+    color: (90deg, #017dc5, #80e2ff);
+}
+
+.gradientBoxContainerLeftRight {
+    background: linear-gradient(90deg, #017dc5, #80e2ff);
+    border-radius: 40px;
+    border-top-left-radius: 0px;
+    padding: 3px;
+}
+
+.gradient-box-leftRight {
+    position: relative;
+    border-radius: 40px;
+    border-top-left-radius: 0px;
+    padding: 10px 30px;
+    background: white;
+    overflow: hidden;
+
+    &>* {
+        z-index: 1;
+        position: relative;
+    }
+
+    &:hover {
+
+        &>span>*,
+        &>div>* {
+            color: white;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #017dc5, #80e2ff);
+        transition: left 0.3s;
+        /* Transition for smooth animation */
+    }
+
+    &::after {
+        left: 100%;
+    }
+
+    &:hover::before,
+    &:hover::after {
+        left: 0;
+    }
+
+    /* Optional: Adjust transition timing function for a smoother effect */
+    &::before,
+    &::after {
+        transition-timing-function: ease-out;
+    }
+}
+
+.gradientBoxContainerTopBottom {
+    background: linear-gradient(360deg, #017dc5, #80e2ff);
+    border-radius: 40px;
+    border-top-left-radius: 0px;
+    padding: 3px;
+}
+
+.gradient-box-topBottom {
+    position: relative;
+    border-radius: 40px;
+    border-top-left-radius: 0px;
+    padding: 30px;
+    background: white;
+    overflow: hidden;
+
+    &>* {
+        z-index: 1;
+        position: relative;
+    }
+
+    &:hover {
+
+        &>div,
+        &>p {
+            color: white;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+        background: linear-gradient(360deg, #017dc5, #80e2ff);
+        transition: height 0.3s;
+    }
+
+    .gradient-box::after {
+        bottom: 100%;
+    }
+
+    &:hover::before,
+    &:hover::after {
+        height: 100%;
+    }
+
+    /* Optional: Adjust transition timing function for a smoother effect */
+    &::before,
+    &::after {
+        transition-timing-function: ease-out;
+    }
+}
+
+.gradientBg {
+    background: linear-gradient(180deg, #017dc5, #80e2ff);
+    border-radius: 40px;
+    border-top-left-radius: 0px;
+    padding: 3px;
+}
+
+.curveBorder {
+    border-radius: 40px;
+    border-top-left-radius: 0px;
+}
+
+.whiteButtonContainer {
+    margin-top: 20px;
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 40px;
+    border-top-left-radius: 0px;
+    padding: 10px 30px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+
+    &>* {
+        z-index: 1;
+        position: relative;
+    }
+
+    &:hover {
+        color: #30d4f7;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        transition: left 0.3s;
+        background: white;
+        /* Transition for smooth animation */
+    }
+
+    &::after {
+        left: -100%;
+    }
+
+    &:hover::before,
+    &:hover::after {
+        left: 0;
+    }
+
+    /* Optional: Adjust transition timing function for a smoother effect */
+    &::before,
+    &::after {
+        transition-timing-function: ease-out;
+    }
+}
+
+.navigationBar {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    z-index: 999;
+
+    .navigationList {
+        list-style: none;
+        text-align: start;
+        gap: 20px;
+
+        li{
+            .loginBtn, .logoutBtn{
+                margin-top: 0;
+            }
+            .nav-link {
+                &:link,
+                &:visited{
+                    display: inline-block;
+                    text-decoration: none;
+                    transition: color 0.2s linear;
+                }
+                
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.mobileMenuBtn{
+    display: none;
+    position: relative;
+    cursor: pointer;
+
+    .mobileMenuIcon{
+        position: absolute;
+        top: 50%;
+        right: 20%;
+        translate: -20% -50%;
+    }
+}
+
+.closeMenuOutline{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .logo{
+        max-width: 10rem;
+        min-width: 5rem;
+    }
+
+    .mobileMenuBtn{
+        display: inline-block;
+        z-index: 9999;
+    }
+
+    .active .mobileMenuIcon{
+        display: none;
+    }
+
+    .active .closeMenuOutline{
+        display: inline-block;
+    }
+
+    .navigationBar{
+        .navigationList{
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            padding-top: 70px;
+            top: 0;
+            right: 0;
+            background: linear-gradient(250deg, #017dc5, #80e2ff);
+            display: flex;
+            justify-content: flex-start;
+            align-items: start;
+            padding: 30px;
+            color: white;
+            gap: 20px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            font-size: 1.6rem;
+            flex-direction: column;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.2s linear;
+
+            li > .nav-link{
+                transition: color 0.2s linear;
+            
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+
+    }
+
+    .active .navigationList{
+        visibility: visible;
+        opacity: 1;
+        z-index: 999;
+        transform-origin: right;
+        transition: all 0.2s linear;
+    }
+}
