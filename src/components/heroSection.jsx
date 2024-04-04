@@ -6,7 +6,7 @@ import { FaApple } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <div>
+    <div id="home">
       <div className="heroContainer">
         <div className="container mx-auto lg:px-10 px-5 flex gap-5 lg:flex-row flex-col-reverse lg:justify-between lg:h-full lg:mt-[180px] mt-[140px]">
           <div className="lg:w-[50%] w-full flex flex-col md:gap-8 gap-6 z-10 lg:px-2 my-24 px-5">
