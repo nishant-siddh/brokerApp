@@ -8,7 +8,7 @@ const Video = () => {
         <div id="about-us" className="container mx-auto lg:px-10 px-1 my-20">
             <div className="lg:w-[80%] w-[90%] gradientBg flex items-center gap-4 relative Shadow lg:py-16 py-0 scroll-py-48 xl:px-20 px-10 lg:mx-0 mx-auto">
                 <div className="lg:w-[60%] w-[100%] lg:mt-0 mt-44 sm:mt-44 lg:block flex flex-col items-center pb-10 lg:pb-0">
-                    <div className="flex gap-2 items-center text-white font-semibold text-lg">
+                    <div className="flex gap-2 items-center text-white font-semibold lg:text-lg text-base">
                         <GoDeviceCameraVideo className="sm:text-xl text-2xl" />
                         <p className="text-center lg:text-start">
                             YOUR NETWORK IS YOUR NET-WORTH
