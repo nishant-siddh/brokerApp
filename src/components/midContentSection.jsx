@@ -1,15 +1,15 @@
 import React from "react";
 import HeroSection from "./heroSection";
-import AppFeatures from "./appFeatures";
 import Testimonials from "./testimonials";
 import VideoSection from "./videoSection";
 import ContactFormSection from "./contactFormSection";
+import AppFeaturesSection from "./appFeaturesSection";
 
 const MidContentSection = () => {
     return (
         <>
             <HeroSection />
-            <AppFeatures />
+            <AppFeaturesSection />
             <Testimonials />
             <VideoSection />
             <ContactFormSection />

@@ -7,7 +7,8 @@ import { LiaFileInvoiceSolid } from "react-icons/lia";
 import { LiaCommentsSolid } from "react-icons/lia";
 import { LiaSitemapSolid } from "react-icons/lia";
 
-const AppFeatures = () => {
+
+const AppFeaturesSection = () => {
     return (
         <div id="app-features" className="container mx-auto lg:px-10 px-5 lg:mt-56 mt-0">
             <p className="flex items-center justify-center gap-2 text-[#5178e8]">
@@ -93,4 +94,4 @@ const AppFeatures = () => {
     );
 };
 
-export default AppFeatures;
+export default AppFeaturesSection;
