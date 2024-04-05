@@ -83,7 +83,7 @@ const Navigation = () => {
                         <img src={logo} alt="" className="lg:hidden block w-24 -ml-5 mb-10" />
                         {sections.map((section) => (
                             <>
-                                <a href={`/#${section}`} className="nav-link" onClick={handleSectionScroll}>
+                                <a href={`/bapp/#${section}`} className="nav-link" onClick={handleSectionScroll}>
                                     <li
                                         key={section}
                                         // className={`cursor-pointer capitalize hover:text-[#EA7846] ${activeSection === section && "text-[#EA7846]"}`}
