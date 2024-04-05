@@ -23,40 +23,48 @@ const Footer = () => {
                 </div>
                 <div className='w-full flex flex-col lg:gap-16 gap-5'>
                     <span className='darkBlue text-lg font-bold tracking-wider'>Follow</span>
-                    <div className='flex flex-col gap-5'>
-                        <div className='flex items-center gap-2 text-xl'>
-                            <FaTwitter className='text-[#81dfff]' />
-                            <span className='grey cursor-pointer'>Twitter</span>
-                        </div>
-                        <div className='flex items-center gap-2 text-xl'>
-                            <FaFacebook className='text-[#88b6fe]' />
-                            <span className='grey cursor-pointer'>Facebook</span>
-                        </div>
-                        <div className='flex items-center gap-2 text-xl'>
-                            <FaLinkedin className='text-[#ac9dfc]' />
-                            <span className='grey cursor-pointer'>Linkedin</span>
-                        </div>
-                        <div className='flex items-center gap-2 text-xl'>
-                            <CiInstagram className='grey' />
-                            <span className='grey cursor-pointer'>Instagram</span>
-                        </div>
-                    </div>
+                    <ul className='flex flex-col gap-5 list2'>
+                        <li>
+                            <NavLink to='https://twitter.com/brokerappdotcom' className='flex items-center gap-2 text-xl w-fit' >
+                                <FaTwitter className='text-[#81dfff]' />
+                                <span className='grey cursor-pointer'>Twitter</span>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='https://www.facebook.com/brokerappofficial' className='flex items-center gap-2 text-xl w-fit' >
+                                <FaFacebook className='text-[#88b6fe]' />
+                                <span className='grey cursor-pointer'>Facebook</span>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='https://www.linkedin.com/company/brokerappofficial' className='flex items-center gap-2 text-xl w-fit' >
+                                <FaLinkedin className='text-[#ac9dfc]' />
+                                <span className='grey cursor-pointer'>Linkedin</span>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='https://www.linkedin.com/company/brokerappofficial' className='flex items-center gap-2 text-xl w-fit' >
+                                <CiInstagram className='grey' />
+                                <span className='grey cursor-pointer'>Instagram</span>
+                            </NavLink>
+                        </li>
+                    </ul>
                 </div>
                 <div className='w-full flex flex-col lg:gap-16 gap-5'>
                     <span className='darkBlue text-lg font-bold tracking-wider'>Explore</span>
-                    <div className='flex flex-col gap-5'>
-                        <div className='flex items-center gap-2 text-xl'>
+                    <ul className='flex flex-col gap-5 list'>
+                        <li className='flex items-center gap-2 text-xl w-fit'>
                             <span className='grey cursor-pointer'>Terms & Conditions</span>
-                        </div>
-                        <NavLink to='privacy-policy' >
-                            <div className='flex items-center gap-2 text-xl'>
+                        </li>
+                        <li className='flex items-center gap-2 text-xl w-fit'>
+                            <NavLink to='privacy-policy' >
                                 <span className='grey cursor-pointer'>Privacy Policy</span>
-                            </div>
-                        </NavLink>
-                        <div className='flex items-center gap-2 text-xl'>
+                            </NavLink>
+                        </li>
+                        <li className='flex items-center gap-2 text-xl w-fit'>
                             <span className='grey cursor-pointer'>Help Center</span>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

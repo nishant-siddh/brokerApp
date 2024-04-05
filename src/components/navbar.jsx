@@ -79,7 +79,7 @@ const Navigation = () => {
                     </NavLink>
                 </div>
                 <div>
-                    <ul className="navigationList hidden lg:flex gap-9 grey font-semibold text-[1.3rem] tracking-wide">
+                    <ul className="navigationList list hidden lg:flex gap-9 grey font-semibold text-[1.3rem] tracking-wide">
                         <img src={logo} alt="" className="lg:hidden block w-14 mb-10" />
                         {sections.map((section) => (
                             <>

@@ -258,19 +258,23 @@ html {
         text-align: start;
         gap: 20px;
 
-        li{
-            .loginBtn, .logoutBtn{
+        li {
+
+            .loginBtn,
+            .logoutBtn {
                 margin-top: 0;
             }
+
             .nav-link {
+
                 &:link,
-                &:visited{
+                &:visited {
                     display: inline-block;
                     text-decoration: none;
                     transition: color 0.2s linear;
                 }
-                
-                &:hover{
+
+                &:hover {
                     color: white;
                 }
             }
@@ -278,12 +282,12 @@ html {
     }
 }
 
-.mobileMenuBtn{
+.mobileMenuBtn {
     display: none;
     position: relative;
     cursor: pointer;
 
-    .mobileMenuIcon{
+    .mobileMenuIcon {
         position: absolute;
         top: 50%;
         right: 20%;
@@ -291,31 +295,31 @@ html {
     }
 }
 
-.closeMenuOutline{
+.closeMenuOutline {
     display: none;
 }
 
 @media (max-width: 1024px) {
-    .logo{
+    .logo {
         max-width: 10rem;
         min-width: 5rem;
     }
 
-    .mobileMenuBtn{
+    .mobileMenuBtn {
         display: inline-block;
         z-index: 9999;
     }
 
-    .active .mobileMenuIcon{
+    .active .mobileMenuIcon {
         display: none;
     }
 
-    .active .closeMenuOutline{
+    .active .closeMenuOutline {
         display: inline-block;
     }
 
-    .navigationBar{
-        .navigationList{
+    .navigationBar {
+        .navigationList {
             width: 100vw;
             height: 100vh;
             position: fixed;
@@ -337,10 +341,10 @@ html {
             opacity: 0;
             transition: all 0.2s linear;
 
-            li > .nav-link{
+            li>.nav-link {
                 transition: color 0.2s linear;
-            
-                &:hover{
+
+                &:hover {
                     color: white;
                 }
             }
@@ -348,11 +352,33 @@ html {
 
     }
 
-    .active .navigationList{
+    .active .navigationList {
         visibility: visible;
         opacity: 1;
         z-index: 999;
         transform-origin: right;
         transition: all 0.2s linear;
     }
+}
+
+.list li, .list2 > li span {
+    position: relative
+}
+
+.list li::after, .list2 > li span::after {
+    content: '';
+    position: absolute;
+    background-color: #3b3c3d;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -5px;
+    border-radius: 0.75rem;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.list li:hover::after, .list2 > li span:hover::after {
+    transform: scaleX(1);
 }
