@@ -16,7 +16,7 @@ const router = createBrowserRouter(
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode basename="https://broker-app-kappa.vercel.app/privacy-policy">
+  <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
 );

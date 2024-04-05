@@ -148,7 +148,7 @@ const PrivacyPolicyPage = () => {
 
     return (
         <div className="lg:mt-[180px] mt-[140px] mb-20">
-            <h1 className="text-center lg:text-5xl md:text-4xl sm:text-3xl text-3xl mx-auto my-10 font-medium">
+            <h1 className="text-center lg:text-5xl md:text-4xl sm:text-3xl text-3xl mx-auto my-10 font-medium darkBlue">
                 Privacy Policy
             </h1>
 
@@ -156,14 +156,14 @@ const PrivacyPolicyPage = () => {
             <div className="container mx-auto lg:px-10 px-5">
                 {content.map((item) => (
                     <div key={item.id} className="my-10">
-                        <h2 className="text-2xl font-semibold">{item.heading}</h2>
-                        <p className="my-5">{item.content}</p>
+                        <h2 className="text-2xl font-semibold darkBlue">{item.heading}</h2>
+                        <p className="my-5 grey">{item.content}</p>
                         {item.subcontent.length > 0 && (
                             <div className="ml-5">
                                 {item.subcontent.map((subitem) => (
                                     <div key={subitem.id}>
-                                        <h3 className="text-lg font-semibold">{subitem.heading}</h3>
-                                        <p className="my-3">{subitem.content}</p>
+                                        <h3 className="text-lg font-semibold darkBlue">{subitem.heading}</h3>
+                                        <p className="my-3 grey">{subitem.content}</p>
                                     </div>
                                 ))}
                             </div>
