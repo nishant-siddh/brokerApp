@@ -5,7 +5,7 @@ import Testimonials from "./testimonials";
 import VideoSection from "./videoSection";
 import ContactFormSection from "./contactFormSection";
 
-const MidSection = () => {
+const MidContentSection = () => {
     return (
         <>
             <HeroSection />
@@ -17,4 +17,4 @@ const MidSection = () => {
     )
 };
 
-export default MidSection;
+export default MidContentSection;
