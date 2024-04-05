@@ -3,13 +3,13 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-import MidSection from "./components/MidSection.jsx";
 import PrivacyPolicyPage from "./components/privacy-Policy-Page.jsx";
+import MidContentSection from "./components/midContentSection.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route path="" element={<MidSection />} />
+      <Route path="" element={<MidContentSection />} />
       <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
     </Route>
   )
