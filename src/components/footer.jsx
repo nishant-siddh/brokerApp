@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.svg'
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -11,7 +11,7 @@ const Footer = () => {
         <div className='container mx-auto lg:px-10 px-5 pb-20'>
             <div className='grid lg:grid-cols-3 grid-cols-1 gap-20 flex-grow-1'>
                 <div className='w-full flex flex-col gap-8 '>
-                    <img src={logo} alt="" className='w-14' />
+                    <img src={logo} alt="" className='w-20 -ml-5' />
                     <div className='grey text-2xl'>
                         <span className='font-semibold'>Registered Office</span>
                         <p className='text-xl'>6TH, OFFICE-05, UNIT NO-SB/C/61/, Sohna Bypass, M3M URBAN SECTOR 67, Gurugram, Gurugram, Haryana, 122101</p>

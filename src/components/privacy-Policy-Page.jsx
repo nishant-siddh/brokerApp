@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 const PrivacyPolicyPage = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
 
-    const [content, setContent] = useState([
+    const content = [
         {
             id: 1,
             heading: "Introduction",
@@ -144,7 +144,8 @@ const PrivacyPolicyPage = () => {
             subcontent: [],
             list: []
         }
-    ]);
+    ];
+
     return (
         <div className="lg:mt-[180px] mt-[140px] mb-20">
             <h1 className="text-center lg:text-5xl md:text-4xl sm:text-3xl text-3xl mx-auto my-10 font-medium">

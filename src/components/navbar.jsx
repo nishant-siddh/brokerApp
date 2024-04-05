@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { FaTwitter } from "react-icons/fa";
@@ -74,13 +74,13 @@ const Navigation = () => {
                         <img
                             src={logo}
                             alt="Broker app logo"
-                            className="w-14 logoWithShadow cursor-pointer"
+                            className="w-28 -ml-5 logoWithShadow cursor-pointer"
                         />
                     </NavLink>
                 </div>
                 <div>
                     <ul className="navigationList list hidden lg:flex gap-9 grey font-semibold text-[1.3rem] tracking-wide">
-                        <img src={logo} alt="" className="lg:hidden block w-14 mb-10" />
+                        <img src={logo} alt="" className="lg:hidden block w-24 -ml-5 mb-10" />
                         {sections.map((section) => (
                             <>
                                 <a href={`/#${section}`} className="nav-link" onClick={handleSectionScroll}>
