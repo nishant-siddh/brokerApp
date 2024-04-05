@@ -361,11 +361,13 @@ html {
     }
 }
 
-.list li, .list2 > li span {
+.list li,
+.list2>li span {
     position: relative
 }
 
-.list li::after, .list2 > li span::after {
+.list li::after,
+.list2>li span::after {
     content: '';
     position: absolute;
     background-color: #3b3c3d;
@@ -379,6 +381,7 @@ html {
     transition: transform 0.3s ease-in-out;
 }
 
-.list li:hover::after, .list2 > li span:hover::after {
+.list li:hover::after,
+.list2>li span:hover::after {
     transform: scaleX(1);
 }
