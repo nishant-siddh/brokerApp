@@ -2,7 +2,7 @@ import React from "react";
 import { CiMail } from "react-icons/ci";
 import artwork from '../assets/Artwork.png'
 
-const ContactForm = () => {
+const ContactFormSection = () => {
     return (
         <div id="contact-us" className="relative">
             <div className="container mx-auto lg:px-10 px-5 my-32 z-20 relative">
@@ -49,4 +49,4 @@ const ContactForm = () => {
     );
 };
 
-export default ContactForm;
+export default ContactFormSection;

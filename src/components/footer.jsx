@@ -4,6 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { CiInstagram } from "react-icons/ci";
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -25,19 +26,19 @@ const Footer = () => {
                     <div className='flex flex-col gap-5'>
                         <div className='flex items-center gap-2 text-xl'>
                             <FaTwitter className='text-[#81dfff]' />
-                            <span className='grey'>Twitter</span>
+                            <span className='grey cursor-pointer'>Twitter</span>
                         </div>
                         <div className='flex items-center gap-2 text-xl'>
                             <FaFacebook className='text-[#88b6fe]' />
-                            <span className='grey'>Facebook</span>
+                            <span className='grey cursor-pointer'>Facebook</span>
                         </div>
                         <div className='flex items-center gap-2 text-xl'>
                             <FaLinkedin className='text-[#ac9dfc]' />
-                            <span className='grey'>Linkedin</span>
+                            <span className='grey cursor-pointer'>Linkedin</span>
                         </div>
                         <div className='flex items-center gap-2 text-xl'>
                             <CiInstagram className='grey' />
-                            <span className='grey'>Instagram</span>
+                            <span className='grey cursor-pointer'>Instagram</span>
                         </div>
                     </div>
                 </div>
@@ -45,13 +46,15 @@ const Footer = () => {
                     <span className='darkBlue text-lg font-bold tracking-wider'>Explore</span>
                     <div className='flex flex-col gap-5'>
                         <div className='flex items-center gap-2 text-xl'>
-                            <span className='grey'>Terms & Conditions</span>
+                            <span className='grey cursor-pointer'>Terms & Conditions</span>
                         </div>
+                        <NavLink to='privacy-policy' >
+                            <div className='flex items-center gap-2 text-xl'>
+                                <span className='grey cursor-pointer'>Privacy Policy</span>
+                            </div>
+                        </NavLink>
                         <div className='flex items-center gap-2 text-xl'>
-                            <span className='grey'>Privacy Policy</span>
-                        </div>
-                        <div className='flex items-center gap-2 text-xl'>
-                            <span className='grey'>Help Center</span>
+                            <span className='grey cursor-pointer'>Help Center</span>
                         </div>
                     </div>
                 </div>

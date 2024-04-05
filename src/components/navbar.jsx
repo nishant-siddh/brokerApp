@@ -6,6 +6,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { CiInstagram } from "react-icons/ci";
+import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -57,6 +58,11 @@ const Navigation = () => {
         };
     }, [sections]);
 
+    function handleSectionScroll() {
+        setMenuIcon(false)
+
+    }
+
     return (
         <nav
             className={`fixed w-[100%] top-0 flex justify-center h-[130px] z-50 transition duration-300 ${isScrolled ? "bg-white Shadow" : "bg-transparent"
@@ -64,22 +70,24 @@ const Navigation = () => {
         >
             <div className={`container mx-auto lg:px-11 px-5 flex justify-between items-center ${menuIcon ? 'navigationBar active' : 'navigationBar'}`}>
                 <div>
-                    <img
-                        src={logo}
-                        alt="Broker app logo"
-                        className="w-14 logoWithShadow cursor-pointer"
-                    />
+                    <NavLink to="/">
+                        <img
+                            src={logo}
+                            alt="Broker app logo"
+                            className="w-14 logoWithShadow cursor-pointer"
+                        />
+                    </NavLink>
                 </div>
                 <div>
                     <ul className="navigationList hidden lg:flex gap-9 grey font-semibold text-[1.3rem] tracking-wide">
                         <img src={logo} alt="" className="lg:hidden block w-14 mb-10" />
                         {sections.map((section) => (
                             <>
-                                <a href={`#${section}`} className="nav-link" onClick={() => setMenuIcon(false)}>
+                                <a href={`/#${section}`} className="nav-link" onClick={handleSectionScroll}>
                                     <li
                                         key={section}
-                                        // className={`cursor-pointer hover:text-[#EA7846] capitalize ${activeSection === section && "text-[#EA7846]"
-                                        className={`cursor-pointer capitalize`}
+                                        // className={`cursor-pointer capitalize hover:text-[#EA7846] ${activeSection === section && "text-[#EA7846]"}`}
+                                    className={`cursor-pointer capitalize`}
                                     >
                                         {section.replace("-", " ")}
                                     </li>

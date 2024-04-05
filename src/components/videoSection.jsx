@@ -3,7 +3,7 @@ import videoImg from "../assets/videoImg.jpg";
 import { GoDeviceCameraVideo } from "react-icons/go";
 import { CiPlay1 } from "react-icons/ci";
 
-const Video = () => {
+const VideoSection = () => {
     return (
         <div id="about-us" className="container mx-auto lg:px-10 px-1 my-20">
             <div className="lg:w-[80%] w-[90%] gradientBg flex items-center gap-4 relative Shadow lg:py-16 py-0 scroll-py-48 xl:px-20 px-10 lg:mx-0 mx-auto">
@@ -37,6 +37,6 @@ const Video = () => {
     );
 };
 
-export default Video;
+export default VideoSection;
 
 // lg:-right-[30%] left-1/2 lg:top-1/2 top-0 -translate-y-2/4 lg:translate-x-[30%] -translate-x-2/4
